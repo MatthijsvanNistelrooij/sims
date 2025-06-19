@@ -7,6 +7,8 @@ const io = new Server({
       "https://monumental-kangaroo-86a203.netlify.app/",
       "http://localhost:5177",
     ],
+    methods: ["GET", "POST"],
+    credentials: true,
   },
 })
 
