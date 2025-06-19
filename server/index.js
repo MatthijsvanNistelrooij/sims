@@ -22,7 +22,7 @@ const generateRandomHexColor = () =>
 // ✅ Global cleanup
 setInterval(() => {
   const now = Date.now()
-  const TIMEOUT = 15000
+  const TIMEOUT = 150000
 
   const before = characters.length
   for (let i = characters.length - 1; i >= 0; i--) {
