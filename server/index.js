@@ -2,7 +2,12 @@ import { Server } from "socket.io"
 
 const io = new Server({
   cors: {
-    origin: "http://localhost:5176", // or your deployed frontend URL
+    origin: [
+      "https://monumental-kangaroo-86a203.netlify.app",
+      "http://localhost:5177",
+    ],
+    methods: ["GET", "POST"],
+    credentials: true,
   },
 })
 
