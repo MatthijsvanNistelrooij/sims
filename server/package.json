@@ -1,0 +1,14 @@
+
+
+{
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
