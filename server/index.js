@@ -4,7 +4,7 @@ const io = new Server({
   cors: {
     origin: [
       "https://monumental-kangaroo-86a203.netlify.app",
-      "http://localhost:5177",
+      "http://localhost:5176",
     ],
     methods: ["GET", "POST"],
     credentials: true,

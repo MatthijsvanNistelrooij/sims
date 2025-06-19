@@ -3,7 +3,9 @@ import { atom } from "jotai"
 
 const socketUrl = import.meta.env.VITE_SOCKET_URL
 
-console.log("socketUrl", socketUrl)
+export const socket = io(socketUrl, {
+  transports: ["websocket"], // Ensure it uses WebSocket protocol
+  forceNew: true, // ✅ Force a new connection for every tab
+})
 
-export const socket = io(socketUrl)
 export const charactersAtom = atom([])
