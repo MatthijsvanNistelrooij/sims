@@ -26,8 +26,8 @@ export function AnimatedWoman({ hairColor, topColor, bottomColor, ...props }) {
   console.log(actions)
 
   useEffect(() => {
-    actions[animation].reset().fadeIn(0.32).play()
-    return () => actions[animation]?.fadeOut(0.32)
+    actions[animation].reset().fadeIn(0.2).play()
+    return () => actions[animation]?.fadeOut(0.2)
   }, [actions, animation])
 
   useFrame(() => {
